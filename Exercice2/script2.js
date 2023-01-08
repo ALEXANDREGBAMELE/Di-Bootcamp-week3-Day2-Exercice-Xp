@@ -18,14 +18,30 @@
         let submi = form.elements.submit
         console.log(submi)
 
+        let input = document.querySelectorAll("input")
+
         submi.addEventListener("click" , function (e) {
             e.preventDefault()
             submi.style.backgroundColor = "lightgreen"
+            //console.log(lname.value)
+            liInput()   
         })
+
+       
+        function liInput(){
+            for(let i = 0; i < (input.length- 1); i++){
+                let ul = document.querySelector("ul")
+                let value = input[i].value
+                let li = document.createElement("li")
+                ul.appendChild(li)
+                let alleSelect = document.querySelectorAll("li")
+                alleSelect[i].innerHTML = value
+            }
+        }
+
         
-        let ul = document.querySelector("ul")
-        let li = document.createElement("li")
-        console.log(ul.appendChild(li))
+        
+
 
 
 // When the user submits the form (ie. submit event listener)
