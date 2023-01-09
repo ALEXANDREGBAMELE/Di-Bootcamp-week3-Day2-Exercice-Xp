@@ -1,9 +1,34 @@
+
+
 // Add this sentence to your HTML file then follow the steps :
 
-// <p><strong>Hello</strong> I hope you are enjoying <strong>this</strong> class. At the
-// <strong>end</strong> you <strong>will</strong> be great Developers!
-// <strong>Enjoy</strong> the <strong>JavaScript </strong> lessons</p>
 
+    let allBoldItems = document.querySelectorAll("strong")
+    
+    allBoldItems.forEach(item => {item.style.color = "blue";})
+    //allBoldItems.style.backgroundColor = "lightgreen"
+    console.log(allBoldItems)
+
+    
+
+
+// getBold_items()
+// return_normal()
+
+
+
+// function getBold_items() {
+    
+//     highlight()
+// }
+
+// function highlight() {
+//     return allBoldItems.style.color = "blue";
+// }
+
+// function return_normal() {
+//     return allBoldItems.style.color = "green";
+// }
 
 // In the JS file:
 
