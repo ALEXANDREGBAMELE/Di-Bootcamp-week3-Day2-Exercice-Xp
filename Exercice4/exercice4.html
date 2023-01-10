@@ -21,28 +21,9 @@
             <input type="submit" value="Calculate" id="submit">    
         </form> 
 
-        <script>
-            //4 × π × R2.
-            //Sphère ou boule	​L'aire d'une sphère AT=4πr2	Le ​volume d'une boule V=4/3πr(exp3)
-        let form = document.forms[0];
-        let radius = form.elements.radius
-        let volume = form.elements.volume
-        let submit = form.elements.submit
-        
-        let r = 0;
-        const π = 3.14
-        let V = 0;
-        let input = document.querySelectorAll("input")
+        <script src="script4.js" >
 
-        submit.addEventListener("click" ,function(e) {
-            e.preventDefault();
-            let r = parseInt(radius.value);
-            console.log( r)
-            V=4/(3*π*r*r*r)
-            input[1].innerHTML = V
-        })
-       
-        function calculVolume(){return V=4/(3*π*r*r*r)}
+        
         </script>
     </body> 
 </html> 
